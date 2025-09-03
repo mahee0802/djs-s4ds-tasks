@@ -1,1 +1,25 @@
+Theme & Problem Title
 
+Theme: AI for Personal Finance Management
+Problem Title: Intelligent Credit Scoring and Interactive Budgeting Dashboard for Students and Freelancers
+
+Background Story
+With the surge of UPI-based transactions and gig-economy jobs, students and freelancers often lack formal credit histories, making it difficult to access loans or manage finances effectively. Imagine you are a data scientist tasked with helping a fintech startup design an AI-powered credit scoring system along with an interactive budgeting dashboard to support young earners.
+
+Dataset Description:
+   Source: Synthetic UPI and transactional dataset (inspired by real digital payment logs).
+   Structure: Rows: ~50,000 transaction records (per user).
+   Features:  Transactional: transaction_id, amount, merchant_category, upi_id, timestamps
+              User profile: age, occupation (student/freelancer), monthly_income
+              Derived behavior: avg_monthly_spending, savings_ratio, loan_repayments, cash_flow_variance
+   Target Variables: credit_score_band (Low / Medium / High) 
+                     monthly_budget_forecast → Regression
+   Complexity: A mix of classification and regression tasks, handling financial time-series trends.
+Expected Output:
+    Leverage UPI transaction data and ML to build an alternative credit scoring and budgeting platform enabling fair credit access and smarter financial planning
+    Build a credit scoring model to classify users into Low, Medium, or High creditworthiness.
+    Predict a user’s monthly spending forecast based on past transactions.
+    Generate an interactive dashboard (budget insights, alerts for overspending, savings suggestions).
+Difficulty Level:Advanced
+     Justification: Requires combining classification and regression, handling transactional/time-series data, and integrating outputs into a usable dashboard. It goes beyond ML basics into applied fintech and  visualization.
+    
