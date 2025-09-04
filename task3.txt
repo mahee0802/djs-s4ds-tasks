@@ -1,25 +1,24 @@
-Theme & Problem Title
-
-Theme: AI for Personal Finance Management
-Problem Title: Intelligent Credit Scoring and Interactive Budgeting Dashboard for Students and Freelancers
-
+Theme: Harry Potter & the Chamber of Data
+Problem Title: Predict the Sorting Hat’s Choice using Hogwarts Student Data
 Background Story
-With the surge of UPI-based transactions and gig-economy jobs, students and freelancers often lack formal credit histories, making it difficult to access loans or manage finances effectively. Imagine you are a data scientist tasked with helping a fintech startup design an AI-powered credit scoring system along with an interactive budgeting dashboard to support young earners.
-
-Dataset Description:
-   Source: Synthetic UPI and transactional dataset (inspired by real digital payment logs).
-   Structure: Rows: ~50,000 transaction records (per user).
-   Features:  Transactional: transaction_id, amount, merchant_category, upi_id, timestamps
-              User profile: age, occupation (student/freelancer), monthly_income
-              Derived behavior: avg_monthly_spending, savings_ratio, loan_repayments, cash_flow_variance
-   Target Variables: credit_score_band (Low / Medium / High) 
-                     monthly_budget_forecast → Regression
-   Complexity: A mix of classification and regression tasks, handling financial time-series trends.
-Expected Output:
-    Leverage UPI transaction data and ML to build an alternative credit scoring and budgeting platform enabling fair credit access and smarter financial planning
-    Build a credit scoring model to classify users into Low, Medium, or High creditworthiness.
-    Predict a user’s monthly spending forecast based on past transactions.
-    Generate an interactive dashboard (budget insights, alerts for overspending, savings suggestions).
-Difficulty Level:Advanced
-     Justification: Requires combining classification and regression, handling transactional/time-series data, and integrating outputs into a usable dashboard. It goes beyond ML basics into applied fintech and  visualization.
-    
+The Sorting Hat has lost its magical powers and needs your help! Every year at Hogwarts, new students arrive, but without the hat’s judgment, no one knows whether they belong to Gryffindor, Hufflepuff, Ravenclaw, or Slytherin.
+Your task is to train an intelligent ML model that predicts which house a student belongs to, based on their magical abilities, personality traits, and family history. Once done, the prediction probabilities will be encoded into a cipher that reveals the password to unlock the next Chamber of Data.
+Dataset Description
+    Source (synthetic/curated): Wizarding World Student Profiles Dataset (fictional but structured like a classification dataset).
+    Structure: CSV file with ~2,000 records.
+    Features:  courage_score, loyalty_score, wisdom_score, ambition_score (0–100)
+               wand_length, wand_core_type, blood_status, pet_type
+               quidditch_interest, dark_arts_defense_score
+    Target Variable: house (4-class classification: Gryffindor, Hufflepuff, Ravenclaw, Slytherin).
+    Complexity: Multi-class classification with both numerical and categorical features so it requires preprocessing, feature engineering, and ML modeling.
+Expected Output
+    A trained ML model that predicts the house assignment (multiclass classification).
+    The probability scores (e.g., Gryffindor: 0.70, Ravenclaw: 0.20 …).
+    Apply a custom transformation (Reed-Solomon error correction / Base64 / ASCII conversion) on the probability vector → generates a password string for the next         level of the treasure hunt.
+Difficulty Level
+    Intermediate
+    Justification:
+        Participants must handle categorical and  numerical features.
+        Requires understanding of preprocessing (One-Hot Encoding, normalization).
+        Involves building and tuning ML models (Logistic Regression, Random Forest, XGBoost).
+        Added creative twist with encoding transformation before reaching the password.
